@@ -1,49 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wln-cC-pbN">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
-        <scene sceneID="iKU-2g-fnI">
-            <objects>
-                <viewController id="zoq-iy-Tag" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LTK-bq-YS7"/>
-                        <viewControllerLayoutGuide type="bottom" id="Fah-U1-Q4B"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yoG-PD-Qv8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="pY4-7r-CJT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Sr-97-b32" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1399" y="551"/>
-        </scene>
-        <!--Item 1-->
-        <scene sceneID="8t0-Lq-eWU">
-            <objects>
-                <viewController id="Y68-lr-N8i" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CjI-qj-2wr"/>
-                        <viewControllerLayoutGuide type="bottom" id="f1N-6Q-hKc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="qmY-Po-fki">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="vn0-Ia-vNV"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jZN-va-M5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1399" y="-104"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="RSZ-zI-MSQ">
             <objects>
@@ -54,15 +16,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Y68-lr-N8i" kind="relationship" relationship="viewControllers" id="qzM-85-Fe3"/>
-                        <segue destination="zoq-iy-Tag" kind="relationship" relationship="viewControllers" id="SMN-gO-cok"/>
+                        <segue destination="d1m-9Z-jLc" kind="relationship" relationship="viewControllers" id="tTa-Jn-1yz"/>
+                        <segue destination="ANI-Of-3K8" kind="relationship" relationship="viewControllers" id="yRJ-5I-k1R"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ub-t4-4Ft" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2353" y="224"/>
         </scene>
-        <!--View Controller-->
+        <!--基本计算器-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="Calculator" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -589,6 +551,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.15645239636844566" green="0.15645239636844566" blue="0.15645239636844566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="基本计算器" id="lyp-53-TOG">
+                        <barButtonItem key="rightBarButtonItem" title="高级计算器" id="pDr-4f-FJP">
+                            <connections>
+                                <segue destination="EjA-6O-ub8" kind="show" id="TPa-NI-njb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="resultText" destination="TMo-BG-aID" id="6be-3A-YMc"/>
                     </connections>
@@ -597,7 +566,24 @@
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
         </scene>
-        <!--Advanced View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="QYs-TO-dIO">
+            <objects>
+                <navigationController id="d1m-9Z-jLc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="history" id="lIl-Ma-F0m"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L2r-oq-nQy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zUZ-TC-c8B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dar-Jo-81b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-914" y="36"/>
+        </scene>
+        <!--高级计算器-->
         <scene sceneID="QF0-pS-10W">
             <objects>
                 <viewController storyboardIdentifier="AdvancedCalculator" id="EjA-6O-ub8" customClass="AdvancedViewController" sceneMemberID="viewController">
@@ -616,14 +602,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYx-uw-5IH">
-                                <frame key="frameInset" minX="16" minY="14" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="基本计算器"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.22820992500000001" green="1" blue="0.35405208100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="高级计算器" id="QdY-Hn-CY7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDM-XQ-c41" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -651,10 +633,23 @@
                         </subviews>
                         <color key="backgroundColor" red="0.31598440966366637" green="0.91906890605773661" blue="0.96587597150259064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="4K6-uz-f2k"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4rV-AZ-GJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2020" y="66"/>
+            <point key="canvasLocation" x="-914" y="804"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EOP-oI-7pe">
+            <objects>
+                <navigationController id="Rvd-5x-3B3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AsF-OX-xxT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oQ8-KI-7Sa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>
