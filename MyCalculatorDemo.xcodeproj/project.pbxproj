@@ -20,7 +20,6 @@
 		112732581DC42F3F0038119B /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 112732571DC42F3F0038119B /* Calculator.m */; };
 		11D97FD01DC6053200E0A23E /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97FCE1DC6053200E0A23E /* AdvancedViewController.m */; };
 		11D97FD61DC60FA400E0A23E /* WeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97FD41DC60FA400E0A23E /* WeightViewController.m */; };
-		11D97FDD1DC613D800E0A23E /* GalleryTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97FDC1DC613D800E0A23E /* GalleryTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +66,6 @@
 		11D97FCE1DC6053200E0A23E /* AdvancedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedViewController.m; sourceTree = "<group>"; };
 		11D97FD31DC60FA400E0A23E /* WeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightViewController.h; sourceTree = "<group>"; };
 		11D97FD41DC60FA400E0A23E /* WeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightViewController.m; sourceTree = "<group>"; };
-		11D97FDB1DC613D800E0A23E /* GalleryTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryTabViewController.h; sourceTree = "<group>"; };
-		11D97FDC1DC613D800E0A23E /* GalleryTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryTabViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +177,6 @@
 				11D97FCE1DC6053200E0A23E /* AdvancedViewController.m */,
 				11D97FD31DC60FA400E0A23E /* WeightViewController.h */,
 				11D97FD41DC60FA400E0A23E /* WeightViewController.m */,
-				11D97FDB1DC613D800E0A23E /* GalleryTabViewController.h */,
-				11D97FDC1DC613D800E0A23E /* GalleryTabViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -320,7 +315,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D97FD61DC60FA400E0A23E /* WeightViewController.m in Sources */,
-				11D97FDD1DC613D800E0A23E /* GalleryTabViewController.m in Sources */,
 				112732241DC42DDA0038119B /* ViewController.m in Sources */,
 				112732211DC42DDA0038119B /* AppDelegate.m in Sources */,
 				11D97FD01DC6053200E0A23E /* AdvancedViewController.m in Sources */,

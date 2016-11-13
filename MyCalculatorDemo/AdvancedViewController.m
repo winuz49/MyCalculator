@@ -9,6 +9,7 @@
 #import "AdvancedViewController.h"
 
 @interface AdvancedViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textTxt;
 
 @end
 

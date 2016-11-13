@@ -21,6 +21,18 @@
 @implementation ViewController
 
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"showAndvanced"])
+    {
+//        if([segue.destinationViewController isKindOfClass:[SecondViewController class]])
+//        {
+//            SecondViewController *sc=(SecondViewController *)segue.destinationViewController;
+//            sc.screen=self.str;
+//        }
+    }
+    
+}
 
 
 
@@ -106,10 +118,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.calculator=[[Calculator alloc] init];
     
-     self.tabBarItem.title=@"计算器";
-    
-    
-   
     
 }
 
