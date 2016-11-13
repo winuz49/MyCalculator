@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Calculator.h"
 @interface AdvancedViewController : UIViewController
 
+@property Calculator *calculator;
 @end

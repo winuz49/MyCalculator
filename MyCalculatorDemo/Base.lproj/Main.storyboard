@@ -554,7 +554,7 @@
                     <navigationItem key="navigationItem" title="基本计算器" id="lyp-53-TOG">
                         <barButtonItem key="rightBarButtonItem" title="高级计算器" id="pDr-4f-FJP">
                             <connections>
-                                <segue destination="EjA-6O-ub8" kind="show" id="TPa-NI-njb"/>
+                                <segue destination="EjA-6O-ub8" kind="show" identifier="showAndvanced" id="TPa-NI-njb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -595,18 +595,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="line" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOD-Jh-He9">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOD-Jh-He9">
                                 <frame key="frameInset" minX="58" minY="93" width="259" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99727740092567807" blue="0.949597836286872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="hhh">
-                                        <attributes>
-                                            <font key="NSFont" size="21" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmx-6T-evb">
@@ -615,7 +609,7 @@
                                 <color key="backgroundColor" red="0.85962376360000003" green="0.88890463080000004" blue="0.87990810929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="（">
+                                <state key="normal" title="(">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.97933279419999997" green="0.97807776489999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -625,6 +619,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="hSS-la-mu5"/>
                                     <action selector="clearText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hof-LZ-3Cs"/>
                                 </connections>
                             </button>
@@ -634,7 +629,7 @@
                                 <color key="backgroundColor" red="0.85962376360000003" green="0.88890463080000004" blue="0.87990810929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="）">
+                                <state key="normal" title=")">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.97933279419999997" green="0.97807776489999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -644,6 +639,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="aZ7-gq-sqN"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OW8-dJ-7cb"/>
                                 </connections>
                             </button>
@@ -663,6 +659,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="8Ab-PB-T66"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zXj-sN-pME"/>
                                 </connections>
                             </button>
@@ -682,6 +679,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="x23-wK-MSw"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kMe-v3-8yL"/>
                                 </connections>
                             </button>
@@ -701,6 +699,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="GYf-Md-gJ1"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FU9-6Y-kyx"/>
                                 </connections>
                             </button>
@@ -720,6 +719,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="Zza-1H-meH"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pZ2-BK-5bW"/>
                                 </connections>
                             </button>
@@ -739,6 +739,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="C1W-4M-bwn"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cmv-9z-HjA"/>
                                 </connections>
                             </button>
@@ -758,6 +759,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="jnc-yT-YqK"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L7O-a7-JwT"/>
                                 </connections>
                             </button>
@@ -777,6 +779,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="m6L-PL-WpT"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wzX-9R-xBF"/>
                                 </connections>
                             </button>
@@ -796,6 +799,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="6Ib-Mp-z1n"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="01d-tf-sfn"/>
                                 </connections>
                             </button>
@@ -815,6 +819,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="cLk-YB-Ft2"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7mO-mb-iHI"/>
                                 </connections>
                             </button>
@@ -834,6 +839,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="9mw-bN-try"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R3L-hA-dkZ"/>
                                 </connections>
                             </button>
@@ -853,6 +859,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="bVj-8W-g3H"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OPc-E4-bex"/>
                                 </connections>
                             </button>
@@ -862,7 +869,7 @@
                                 <color key="backgroundColor" red="0.85962376360000003" green="0.88890463080000004" blue="0.87990810929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="In">
+                                <state key="normal" title="ln">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.97933279419999997" green="0.97807776489999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -872,6 +879,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="wgw-fb-kTH"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJN-ms-hpC"/>
                                 </connections>
                             </button>
@@ -891,6 +899,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="99Y-kN-pJ3"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UrI-G9-l0G"/>
                                 </connections>
                             </button>
@@ -910,6 +919,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="uxr-QD-qqb"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SiU-fj-nOB"/>
                                 </connections>
                             </button>
@@ -929,6 +939,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="9Gh-G2-QWz"/>
                                     <action selector="deleteSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hxz-8y-Eoi"/>
                                 </connections>
                             </button>
@@ -948,6 +959,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="VUd-mg-WLe"/>
                                     <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rjS-Kj-h6n"/>
                                 </connections>
                             </button>
@@ -967,6 +979,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="ulz-rg-xlZ"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RPQ-n6-BLO"/>
                                 </connections>
                             </button>
@@ -986,6 +999,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="EjA-6O-ub8" eventType="touchUpInside" id="7aB-i3-KKr"/>
                                     <action selector="sendSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqd-JX-tng"/>
                                 </connections>
                             </button>

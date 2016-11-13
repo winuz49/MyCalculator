@@ -10,7 +10,6 @@
 #import "ViewController.h"
 #import "WeightViewController.h"
 #import "AdvancedViewController.h"
-#import "GalleryTabViewController.h"
 @interface AppDelegate ()
 
 @end

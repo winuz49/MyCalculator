@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Calculator.h"
+#import "AdvancedViewController.h"
 @interface ViewController ()
 @property Calculator *calculator;
 @property (weak, nonatomic) IBOutlet UITextField *resultText;
@@ -23,13 +24,17 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    NSLog(@"test segue");
     if([segue.identifier isEqualToString:@"showAndvanced"])
     {
-//        if([segue.destinationViewController isKindOfClass:[SecondViewController class]])
-//        {
-//            SecondViewController *sc=(SecondViewController *)segue.destinationViewController;
-//            sc.screen=self.str;
-//        }
+        NSLog(@"test segue2");
+        if([segue.destinationViewController isKindOfClass:[AdvancedViewController class]])
+        {
+            NSLog(@"go to Advanced");
+            AdvancedViewController *ac=(AdvancedViewController *)segue.destinationViewController;
+            ac.calculator=self.calculator;
+            NSLog(@"calStr is %@  screen is %@",self.calculator.calStr,self.calculator.screen);
+        }
     }
     
 }
@@ -111,7 +116,13 @@
     
 }
 
-
+-(void)viewWillAppear:(BOOL)animated{
+    
+    self.resultText.text=self.calculator.screen;
+    
+    
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
