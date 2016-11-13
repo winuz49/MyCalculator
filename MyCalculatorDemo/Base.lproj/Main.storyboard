@@ -9,7 +9,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="RSZ-zI-MSQ">
             <objects>
-                <tabBarController id="wln-cC-pbN" sceneMemberID="viewController">
+                <tabBarController id="wln-cC-pbN" customClass="TabBarController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="J6O-oB-ZCo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

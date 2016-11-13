@@ -44,7 +44,7 @@
 //    _window.rootViewController=galleryTabViewController;
 //    [_window makeKeyAndVisible];
     
-    
+   
     
     return YES;
 }

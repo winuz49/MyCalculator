@@ -18,6 +18,7 @@
 		112732521DC42E280038119B /* NumberStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 112732511DC42E280038119B /* NumberStack.m */; };
 		112732551DC42E6B0038119B /* SignStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 112732541DC42E6B0038119B /* SignStack.m */; };
 		112732581DC42F3F0038119B /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 112732571DC42F3F0038119B /* Calculator.m */; };
+		11311BF71DD883DB00A07ED6 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11311BF61DD883DB00A07ED6 /* TabBarController.m */; };
 		11D97FD01DC6053200E0A23E /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97FCE1DC6053200E0A23E /* AdvancedViewController.m */; };
 		11D97FD61DC60FA400E0A23E /* WeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D97FD41DC60FA400E0A23E /* WeightViewController.m */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,8 @@
 		112732541DC42E6B0038119B /* SignStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignStack.m; sourceTree = "<group>"; };
 		112732561DC42F3F0038119B /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		112732571DC42F3F0038119B /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		11311BF51DD883DB00A07ED6 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		11311BF61DD883DB00A07ED6 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		11D97FCD1DC6053200E0A23E /* AdvancedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedViewController.h; sourceTree = "<group>"; };
 		11D97FCE1DC6053200E0A23E /* AdvancedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedViewController.m; sourceTree = "<group>"; };
 		11D97FD31DC60FA400E0A23E /* WeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightViewController.h; sourceTree = "<group>"; };
@@ -177,6 +180,8 @@
 				11D97FCE1DC6053200E0A23E /* AdvancedViewController.m */,
 				11D97FD31DC60FA400E0A23E /* WeightViewController.h */,
 				11D97FD41DC60FA400E0A23E /* WeightViewController.m */,
+				11311BF51DD883DB00A07ED6 /* TabBarController.h */,
+				11311BF61DD883DB00A07ED6 /* TabBarController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				11D97FD61DC60FA400E0A23E /* WeightViewController.m in Sources */,
 				112732241DC42DDA0038119B /* ViewController.m in Sources */,
 				112732211DC42DDA0038119B /* AppDelegate.m in Sources */,
+				11311BF71DD883DB00A07ED6 /* TabBarController.m in Sources */,
 				11D97FD01DC6053200E0A23E /* AdvancedViewController.m in Sources */,
 				1127321E1DC42DDA0038119B /* main.m in Sources */,
 				112732581DC42F3F0038119B /* Calculator.m in Sources */,
