@@ -134,13 +134,6 @@
 
 
 
-- (BOOL)shouldAutorotate
-
-{
-    
-    return NO;
-    
-}
 
 
 
